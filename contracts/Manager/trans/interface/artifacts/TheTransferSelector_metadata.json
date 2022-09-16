@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "collection",
+						"type": "address"
+					}
+				],
+				"name": "checkTransferManagerForToken",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Manager/trans/interface/TheTransFerSelector.sol": "TheTransferSelector"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 99999
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Manager/trans/interface/TheTransFerSelector.sol": {
+			"keccak256": "0x4c44c47a857835829df5a06aea7d339301f92d6805f07032db6f3ef63b3da306",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3397572d8c7f5844d8102851e780c41f8e5b49be6ed43e6f18716dd2fa7fb21b",
+				"dweb:/ipfs/QmaxUjtd7Pg7banAzc6AUqcgXEsumHkkqw6XFYgXx14aHM"
+			]
+		}
+	},
+	"version": 1
+}

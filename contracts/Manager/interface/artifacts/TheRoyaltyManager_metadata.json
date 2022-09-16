@@ -1,0 +1,80 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "collection",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "calculateRoyaltyFeeAndGetRecipient",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Manager/interface/TheRoyaltyFeeManager.sol": "TheRoyaltyManager"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Manager/interface/TheRoyaltyFeeManager.sol": {
+			"keccak256": "0x553adb19658a6f5859886444bc1a2b8483e9ec567bd1ad9aedbfb0ba665e2df1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5fbd253613d3c5845b3132e281f3edb16705a49a6f8fd8b7f35fa4732796c04e",
+				"dweb:/ipfs/QmNpYHvqJgv3fktAUovG8xxP7LTCLHAmTTZfj7M6WZXJBC"
+			]
+		}
+	},
+	"version": 1
+}

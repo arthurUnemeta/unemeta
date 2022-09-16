@@ -1,0 +1,79 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "collection",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transferNonFungibleToken",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Manager/interface/TheTransferManager.sol": "TheTransferManager"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Manager/interface/TheTransferManager.sol": {
+			"keccak256": "0x13b412f89afe677f8e49c4fbddf6ebc0af44607381ab8fb2a2caf79a9b2c6a2e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bab98d5a753bbbab25248b7fba410345a5f44ad4465244d6c1aabcde3aa5f15c",
+				"dweb:/ipfs/Qmdwa6oSgGBfbagu1B1FLoYfmQyWQjCp8J7PkDESKfxLu5"
+			]
+		}
+	},
+	"version": 1
+}

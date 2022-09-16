@@ -1,0 +1,450 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "bool",
+								"name": "isOrderAsk",
+								"type": "bool"
+							},
+							{
+								"internalType": "address",
+								"name": "taker",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "price",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "tokenId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "minPercentageToAsk",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bytes",
+								"name": "params",
+								"type": "bytes"
+							}
+						],
+						"internalType": "struct OrderTypes.TakerOrder",
+						"name": "takerBid",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"internalType": "bool",
+								"name": "isOrderAsk",
+								"type": "bool"
+							},
+							{
+								"internalType": "address",
+								"name": "signer",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "collection",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "price",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "tokenId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "amount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "strategy",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "currency",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "nonce",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "startTime",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "endTime",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "minPercentageToAsk",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bytes",
+								"name": "params",
+								"type": "bytes"
+							},
+							{
+								"internalType": "uint8",
+								"name": "v",
+								"type": "uint8"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "r",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "s",
+								"type": "bytes32"
+							}
+						],
+						"internalType": "struct OrderTypes.MakerOrder",
+						"name": "makerAsk",
+						"type": "tuple"
+					}
+				],
+				"name": "matchSellerOrders",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "bool",
+								"name": "isOrderAsk",
+								"type": "bool"
+							},
+							{
+								"internalType": "address",
+								"name": "taker",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "price",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "tokenId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "minPercentageToAsk",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bytes",
+								"name": "params",
+								"type": "bytes"
+							}
+						],
+						"internalType": "struct OrderTypes.TakerOrder",
+						"name": "takerBid",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"internalType": "bool",
+								"name": "isOrderAsk",
+								"type": "bool"
+							},
+							{
+								"internalType": "address",
+								"name": "signer",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "collection",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "price",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "tokenId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "amount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "strategy",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "currency",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "nonce",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "startTime",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "endTime",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "minPercentageToAsk",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bytes",
+								"name": "params",
+								"type": "bytes"
+							},
+							{
+								"internalType": "uint8",
+								"name": "v",
+								"type": "uint8"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "r",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "s",
+								"type": "bytes32"
+							}
+						],
+						"internalType": "struct OrderTypes.MakerOrder",
+						"name": "makerAsk",
+						"type": "tuple"
+					}
+				],
+				"name": "matchSellerOrdersWETH",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "bool",
+								"name": "isOrderAsk",
+								"type": "bool"
+							},
+							{
+								"internalType": "address",
+								"name": "taker",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "price",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "tokenId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "minPercentageToAsk",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bytes",
+								"name": "params",
+								"type": "bytes"
+							}
+						],
+						"internalType": "struct OrderTypes.TakerOrder",
+						"name": "takerAsk",
+						"type": "tuple"
+					},
+					{
+						"components": [
+							{
+								"internalType": "bool",
+								"name": "isOrderAsk",
+								"type": "bool"
+							},
+							{
+								"internalType": "address",
+								"name": "signer",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "collection",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "price",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "tokenId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "amount",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "strategy",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "currency",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "nonce",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "startTime",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "endTime",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "minPercentageToAsk",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bytes",
+								"name": "params",
+								"type": "bytes"
+							},
+							{
+								"internalType": "uint8",
+								"name": "v",
+								"type": "uint8"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "r",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "s",
+								"type": "bytes32"
+							}
+						],
+						"internalType": "struct OrderTypes.MakerOrder",
+						"name": "makerBid",
+						"type": "tuple"
+					}
+				],
+				"name": "matchesBuyerOrder",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Manager/interface/TheUnemetaExchange.sol": "UnemetaExchange"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Manager/interface/TheUnemetaExchange.sol": {
+			"keccak256": "0xa2c54928b1932071e467d2c47af91162b4866874b6f6501b03d335e74c3dc685",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3ccc6a45002087392b34075d007d8e6c11b617c0b2a0dd25feb23b2a1caff2d0",
+				"dweb:/ipfs/QmeRKnJXdrYACyNjJz4rCn4Bh69Bm6UBtYC9RtJQ1ozgAp"
+			]
+		},
+		"contracts/libraries/OrderTypes.sol": {
+			"keccak256": "0xceadcbdd1164786e6928361e632f5076da6add5318d2cdc23d3721e8447b7536",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4bd9aad61f34ce01ec3527fdb1efea4992138082a54e62baa3b1992abea01574",
+				"dweb:/ipfs/QmV1qKGXFZuzVaSLt1L2jQuHx3cPAz2BW7g5nDtuEN7uth"
+			]
+		}
+	},
+	"version": 1
+}

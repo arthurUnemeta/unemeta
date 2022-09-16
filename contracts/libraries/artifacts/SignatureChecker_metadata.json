@@ -1,0 +1,63 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"title": "SignatureChecker",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "This library allows verification of signatures for both EOAs and contracts.",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/libraries/SignatureChecker.sol": "SignatureChecker"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 99999
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/interfaces/IERC1271.sol": {
+			"keccak256": "0x0705a4b1b86d7b0bd8432118f226ba139c44b9dcaba0a6eafba2dd7d0639c544",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c45b821ef9e882e57c256697a152e108f0f2ad6997609af8904cae99c9bd422e",
+				"dweb:/ipfs/QmRKCJW6jjzR5UYZcLpGnhEJ75UVbH6EHkEa49sWx2SKng"
+			]
+		},
+		"@openzeppelin/contracts/utils/Address.sol": {
+			"keccak256": "0xd6153ce99bcdcce22b124f755e72553295be6abcd63804cfdffceb188b8bef10",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://35c47bece3c03caaa07fab37dd2bb3413bfbca20db7bd9895024390e0a469487",
+				"dweb:/ipfs/QmPGWT2x3QHcKxqe6gRmAkdakhbaRgx3DLzcakHz5M4eXG"
+			]
+		},
+		"contracts/libraries/SignatureChecker.sol": {
+			"keccak256": "0x16a8efc1e23b430bc1c41d678681f0ed6613970f3b5550c52b8bc09f630ed6d5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f2f4bb0e1a4294c03719757f447cde80b1d36ab89bf5aaad448fd0fd626a9aec",
+				"dweb:/ipfs/QmVsgF4TXvvBCoiJy8mrXFDfWdD2KqBZiAYJRzqKqfBThf"
+			]
+		}
+	},
+	"version": 1
+}

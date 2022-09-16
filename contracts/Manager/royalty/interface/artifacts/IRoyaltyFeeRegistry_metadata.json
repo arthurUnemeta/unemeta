@@ -1,0 +1,117 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "collection",
+						"type": "address"
+					}
+				],
+				"name": "royaltyFeeInfoCollection",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "collection",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "royaltyInfo",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_royaltyFeeLimit",
+						"type": "uint256"
+					}
+				],
+				"name": "updateRoyaltyFeeLimit",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Manager/royalty/interface/IRoyaltyFeeRegistry.sol": "IRoyaltyFeeRegistry"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 99999
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Manager/royalty/interface/IRoyaltyFeeRegistry.sol": {
+			"keccak256": "0x711cb38bc94ecc1a78aec90fc798bcb553416122de86bb5d5ecab63e793b49f8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e59081b6554c25265051893dfde258a8b5476b37ec1b52f1f9c61742140b1d47",
+				"dweb:/ipfs/QmaVeRoJv34nphsN27cdUP1hXuMhYL2SvRAByd938GkmLt"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,127 @@
+{
+	"compiler": {
+		"version": "0.8.17+commit.8df45f5f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_unemetaMarket",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "UNEMETA_MARKET",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "collection",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transferNonFungibleToken",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Manager/trans/TransferManagerERC1155.sol": "TransferManagerERC1155"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 99999
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/token/ERC1155/IERC1155.sol": {
+			"keccak256": "0x6392f2cfe3a5ee802227fe7a2dfd47096d881aec89bddd214b35c5b46d3cd941",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bd9c47a375639888e726a99da718890ba16d17d7ad9eacb0ccc892d46d1b3ee0",
+				"dweb:/ipfs/Qmb41W5RUjy2sWg49A2rMnxekSeEk6SvGyJL5tyCCSr7un"
+			]
+		},
+		"@openzeppelin/contracts/utils/introspection/IERC165.sol": {
+			"keccak256": "0x447a5f3ddc18419d41ff92b3773fb86471b1db25773e07f877f548918a185bf1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://be161e54f24e5c6fae81a12db1a8ae87bc5ae1b0ddc805d82a1440a68455088f",
+				"dweb:/ipfs/QmP7C3CHdY9urF4dEMb9wmsp1wMxHF6nhA2yQE5SKiPAdy"
+			]
+		},
+		"contracts/Manager/interface/TheTransferManager.sol": {
+			"keccak256": "0x13b412f89afe677f8e49c4fbddf6ebc0af44607381ab8fb2a2caf79a9b2c6a2e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bab98d5a753bbbab25248b7fba410345a5f44ad4465244d6c1aabcde3aa5f15c",
+				"dweb:/ipfs/Qmdwa6oSgGBfbagu1B1FLoYfmQyWQjCp8J7PkDESKfxLu5"
+			]
+		},
+		"contracts/Manager/trans/TransferManagerERC1155.sol": {
+			"keccak256": "0xe751e6f6c2216dd973120b85d2d5fb05950a96311b9a18fdab8bdb9ebf53a691",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://53627bb7c0a61e72839f2478fc620f5b55503bf9dd0cb5f13d430cc935d64b55",
+				"dweb:/ipfs/QmPRL9BpHtaHPbkWaU3Hv5cN44XB5yCA3Wif4Vj7zaWmyW"
+			]
+		}
+	},
+	"version": 1
+}
