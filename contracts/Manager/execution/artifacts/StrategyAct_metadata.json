@@ -17,6 +17,51 @@
 				"type": "constructor"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "collection",
+						"type": "address"
+					}
+				],
+				"name": "UpdateActivity",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "ACTIVITY_ADDRESS",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "PROTOCOL_FEE",
 				"outputs": [
@@ -327,6 +372,52 @@
 			},
 			{
 				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_freeAddress",
+						"type": "address"
+					}
+				],
+				"name": "setFreeAddress",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "viewProtocolFee",
 				"outputs": [
 					{
@@ -346,6 +437,15 @@
 					"params": {
 						"_protocolFee": "protocol fee (200 --> 2%, 400 --> 4%)"
 					}
+				},
+				"owner()": {
+					"details": "Returns the address of the current owner."
+				},
+				"renounceOwnership()": {
+					"details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+				},
+				"transferOwnership(address)": {
+					"details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
 				}
 			},
 			"title": "StrategyStandardSaleForFixedPrice",
@@ -364,7 +464,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Manager/execution/StrategyFixedPrice.sol": "StrategyFixedPrice"
+			"contracts/Manager/execution/StrategyActivity.sol": "StrategyAct"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -378,12 +478,28 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Manager/execution/StrategyFixedPrice.sol": {
-			"keccak256": "0x11324dbac401ede03e8f29baa2e478f6570ecd25fb11e5bdf1e4ed82db96dbfd",
+		"@openzeppelin/contracts/access/Ownable.sol": {
+			"keccak256": "0xa94b34880e3c1b0b931662cb1c09e5dfa6662f31cba80e07c5ee71cd135c9673",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://5b0c9fbde7447bbadfcba200c321d93173cded1701ff0bbba3786e9e3a8fb367",
-				"dweb:/ipfs/QmVXBLEw5uKy6eQ5itAqrgQ1LVW1ni4Fbvr1Tjt29Rvhdx"
+				"bzz-raw://40fb1b5102468f783961d0af743f91b9980cf66b50d1d12009f6bb1869cea4d2",
+				"dweb:/ipfs/QmYqEbJML4jB1GHbzD4cUZDtJg5wVwNm3vDJq1GbyDus8y"
+			]
+		},
+		"@openzeppelin/contracts/utils/Context.sol": {
+			"keccak256": "0xe2e337e6dde9ef6b680e07338c493ebea1b5fd09b43424112868e9cc1706bca7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6df0ddf21ce9f58271bdfaa85cde98b200ef242a05a3f85c2bc10a8294800a92",
+				"dweb:/ipfs/QmRK2Y5Yc6BK7tGKkgsgn3aJEQGi5aakeSPZvS65PV8Xp3"
+			]
+		},
+		"contracts/Manager/execution/StrategyActivity.sol": {
+			"keccak256": "0x6ea12846453a04d93140c02d6fb86bfda0de905f41e29a785fbcca7106e5af4f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bb3f57212a084f442142c791a9e7156a2e454c58ace3153ac77218e893f1213e",
+				"dweb:/ipfs/QmbVvbf1BSv6LM7Yw9YsiqmbJLDfU4ceduRRhv4X37BK4M"
 			]
 		},
 		"contracts/Manager/execution/interface/TheExecutionStrategy.sol": {
